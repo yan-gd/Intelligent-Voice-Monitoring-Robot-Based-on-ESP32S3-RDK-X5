@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+!.env.example
+
+# Runtime outputs
+runtime/
+*.log
+*.tmp
+*.bak
+
+# RDK / camera runtime frames
+latest.jpg
+*.jpg.tmp
+
+# ESP-IDF build artifacts
+build/
+xiaozhi-esp32-main/build/
+managed_components.lock
+dependencies.lock
+sdkconfig.old
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Test / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
