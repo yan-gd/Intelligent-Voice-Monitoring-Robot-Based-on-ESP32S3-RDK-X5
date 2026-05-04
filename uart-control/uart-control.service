@@ -1,0 +1,15 @@
+[Unit]
+Description=UART Control for Tracking Face and Qwen AI
+After=multi-user.target
+
+[Service]
+Type=simple
+User=sunrise
+Group=sunrise
+WorkingDirectory=/home/sunrise/Desktop/uart-control
+ExecStart=/usr/bin/python3 /home/sunrise/Desktop/uart-control/uart_control.py
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
